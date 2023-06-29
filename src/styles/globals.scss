@@ -24,10 +24,9 @@ body {
 
 h1,
 .h1 {
-  text-transform: uppercase;
-  color: $secondary;
+  color: $azulDestaque;
   font-family: $headerFont;
-  font-size: 4.8rem;
+  font-size: 5.8rem;
   font-weight: 400;
 
   @include device(notebook) {
@@ -39,7 +38,23 @@ h1,
   }
 }
 
-:is(h2, h3, h4, h5, h6) {
+h2,
+.h2 {
+  color: $cinzaLetras;
+  font-family: $headerFont;
+  font-size: 3.8rem;
+  font-weight: 400;
+
+  @include device(notebook) {
+    font-size: 3.6rem;
+  }
+
+  @include device(mobile) {
+    font-size: 3.2rem;
+  }
+}
+
+:is(h3, h4, h5, h6) {
   font-weight: 400;
 }
 
@@ -64,6 +79,7 @@ h1,
 
 p,
 .p {
+  color: $cinzaLetras;
   line-height: 2.5rem;
   font-size: 1.6rem;
   font-weight: 400;
@@ -85,23 +101,30 @@ ul {
   list-style: none;
 }
 
-.btn {
-  display: inline-block;
-  border: none;
-  outline: none;
-  padding: 1.2rem 6rem;
-  font-family: $textFont;
-  clip-path: polygon(15% 0%, 85% 0%, 100% 50%, 85% 100%, 15% 100%, 0% 50%);
+/* TRANSFORMAR PX EM REM */
 
+.btn {
+  background: transparent;
+  border: 2px solid $azulDestaque;
+  border-radius: 25px;
+  padding: 10px 23px;
+  transition: all 0.3s ease;
+  min-width: 200px;
+  text-align: center;
+  height: 41px;
+  font-size: 14px;
+  
   &.btn-primary {
-    background-color: $secondary;
-    color: $primary;
+    
     text-transform: uppercase;
     font-weight: 700;
-
+    color: #007dff!important;
+    
     &:hover {
       cursor: pointer;
-      background-color: lighten($secondary, 3);
+      color: #ffffff!important;
+      background-color: $azulDestaque;
+      
     }
   }
 }

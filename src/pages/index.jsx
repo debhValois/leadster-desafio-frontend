@@ -1,15 +1,24 @@
-import Head from 'next/head'
+import About from '@/Components/About/About';
+import Footer from '@/Components/Footer/Footer';
+import Header from '@/Components/Header/Header';
+import Navbar from '@/Components/Navbar/Navbar';
+import Products from '@/Components/Products/Products';
+import Head from 'next/head';
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Desafio Front-end</title>
-        <meta name="description" content="Clone de layout para landing page da Leadster" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <title>Bubble Coffe</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
       </Head>
-      <main></main>
+      <main>
+        <Navbar />
+        <Header />
+        <Products />
+        <About />
+        <Footer />
+      </main>
     </>
-  )
+  );
 }

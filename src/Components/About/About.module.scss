@@ -1,0 +1,30 @@
+@import '@/styles/variables.scss';
+@import '@/styles/mixins.scss';
+
+
+
+.about {
+  background-color: $lightPrimary;
+  padding-inline: 20rem;
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+  scroll-margin-top: 10rem;
+
+  @include device(notebook) {
+    flex-direction: column;
+    gap: 3rem;
+    max-width: 60rem;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.line {
+  border-top: 1px solid $cinzaLinhas;
+  margin: 0.5rem auto 1.5rem auto;
+  width: 100%;
+}
