@@ -1,15 +1,15 @@
+import Navbar from '@/Components/Navbar/Navbar';
+import Header from '@/Components/Header/Header';
+import Soluctions from '@/Components/Soluctions/Soluctions';
 import Demo from '@/Components/Demo/Demo';
 import Footer from '@/Components/Footer/Footer';
-import Header from '@/Components/Header/Header';
-import Navbar from '@/Components/Navbar/Navbar';
-import Soluctions from '@/Components/Soluctions/Soluctions';
 import Head from 'next/head';
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Bubble Coffe</title>
+        <title>Desafio NextJS</title>
         <meta name='viewport' content='width=device-width, initial-scale=1' />
       </Head>
       <main>

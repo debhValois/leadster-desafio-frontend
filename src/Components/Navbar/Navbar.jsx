@@ -7,8 +7,6 @@ import { useState } from 'react';
 const links = [
   { url: '#soluctions', text: 'Soluções' },
   { url: '#demo', text: 'Demonstração' },
-  { url: '#social', text: 'Social' },
-  { url: '#reviews', text: 'Depoimentos' },
 ];
 
 const Navbar = () => {
@@ -22,7 +20,7 @@ const Navbar = () => {
 
   const toggleIsMobile = () => setIsMobile((prevState) => !prevState);
   return (
-    <section className={styles.navbar}>
+   <section className={styles.navbar}>
       <div className={styles.desktop}>
         <nav className={styles.navigation}>
           <ul>{renderLinks.slice(0, 2)}</ul>
@@ -30,11 +28,7 @@ const Navbar = () => {
         <div className={styles.logo}>
           <Logo />
         </div>
-        <nav className={styles.navigation}>
-          <ul>{renderLinks.slice(2, 4)}</ul>
-        </nav>
       </div>
-
       <div className={`${styles.mobile} ${isMobile ? styles.active : ''}`}>
         <div className={styles.logo}>
           <Logo />
