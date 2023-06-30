@@ -34,7 +34,6 @@ const Navbar = () => {
           <ul>{renderLinks.slice(2, 4)}</ul>
         </nav>
       </div>
-
       <div className={`${styles.mobile} ${isMobile ? styles.active : ''}`}>
         <div className={styles.logo}>
           <Logo />

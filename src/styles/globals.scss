@@ -19,15 +19,21 @@ html {
 body {
   font-size: 1.6rem;
   background-color: $background;
-  font-family: $textFont;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+
 }
 
 h1,
 .h1 {
-  color: $azulDestaque;
   font-family: $headerFont;
-  font-size: 5.8rem;
-  font-weight: 400;
+  font-size: 9rem;
+  font-weight: 700;
+  color: #2c83fb;
+  background-image: -webkit-linear-gradient(45deg, #2c83fb 50%, #1f76f0 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
 
   @include device(notebook) {
     font-size: 4.6rem;
@@ -42,8 +48,8 @@ h2,
 .h2 {
   color: $cinzaLetras;
   font-family: $headerFont;
-  font-size: 3.8rem;
-  font-weight: 400;
+  font-size: 5rem;
+  font-weight: 500;
 
   @include device(notebook) {
     font-size: 3.6rem;
@@ -69,11 +75,11 @@ h2,
   }
 
   &.dark-bg {
-    color: $secondary;
+    color: $cinzaLetras;
   }
 
   &.light-bg {
-    color: $darkSecondary;
+    color: $cinzaLetras;
   }
 }
 
@@ -89,7 +95,7 @@ p,
   }
 
   &.dark-bg {
-    color: $secondary;
+    color: $cinzaLetras;
   }
 }
 
@@ -105,9 +111,9 @@ ul {
 
 .btn {
   background: transparent;
-  border: 2px solid $azulDestaque;
+  border: 2px solid $azulLetras;
   border-radius: 25px;
-  padding: 10px 23px;
+  padding: 6px 20px;
   transition: all 0.3s ease;
   min-width: 200px;
   text-align: center;
@@ -118,7 +124,7 @@ ul {
     
     text-transform: uppercase;
     font-weight: 700;
-    color: #007dff!important;
+    color: $azulDestaque!important;
     
     &:hover {
       cursor: pointer;

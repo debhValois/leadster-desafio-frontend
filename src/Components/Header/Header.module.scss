@@ -2,8 +2,7 @@
 @import '@/styles/mixins.scss';
 
 .header {
-  /*background: radial-gradient($lightPrimary, $primary);*/
-  background-color: $lightPrimary;
+  background-color: $bgSecondary;
   min-height: 60rem;
   display: flex;
   justify-content: center;
@@ -14,7 +13,7 @@
 
   .content {
     text-align: center;
-    max-width: 46rem;
+    max-width: 100rem;
     padding: 0 1rem;
 
     .line {
@@ -29,3 +28,19 @@
   }
 
 }
+
+
+// PARTE DO LOGO ACIMA DO TÍTULO
+.detail1 {
+  position: relative;
+  bottom: 4.3rem;
+  right: 3rem;
+
+  @include device(notebook) {
+    right: -10rem;
+    bottom: 6rem;
+  }
+}
+
+
+

@@ -10,11 +10,19 @@ const Header = () => {
         </a>
         <br/>
         <br/>
-        <h2>Menos conversinha,</h2>
-        <h1>Mais Conversão</h1>
+        <h2>Menos Conversinha,</h2>
+        <h1><strong>Mais Conversão</strong> 
+        <Image
+        src='/asset-header.png'
+        alt='detalhe'
+        width={49}
+        height={32}
+        className={styles.detail1}
+      />
+        </h1>
         <div className={styles.line} />
         <p className='dark-bg'>
-          Conheça as estratégias que mudaram o jogo e como aplicá-las no seu negócio
+          Conheça as estratégias que <b>mudaram o jogo</b> e como aplicá-las no seu negócio
         </p>
       </div>
     </header>
