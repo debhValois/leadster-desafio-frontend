@@ -1,0 +1,57 @@
+@import '@/styles/variables.scss';
+
+.soluction {
+  font-size: 1.4rem;
+  width: 24rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  
+  & > img {
+    border-radius: 5%;
+    Filter: drop-shadow(0.4rem 0.4rem 0.5rem rgba($black, 0.07));
+    -webkit-filter: drop-shadow(0.4rem 0.4rem 0.5rem rgba($black, 0.07));
+  }
+
+  h2 {
+        
+    font-size: inherit;
+    margin-bottom: 1rem;
+  }
+
+  h4 {
+    font-size: 1.6rem;
+  }
+
+    .infoCard {
+      width: 37rem;
+      padding: 1rem 2rem 1rem 2rem;
+      background-color: $bgPrimary;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-bottom-right-radius: 20px 20px;
+      border-bottom-left-radius: 20px 20px;
+
+      margin-bottom: 2rem;
+      Filter: drop-shadow(0.9rem 0.9rem 0.9rem rgba($cinzaLinhas, 0.6));
+      -webkit-filter: drop-shadow(0.9rem 0.9rem 0.9rem rgba($cinzaLinhas, 0.6));
+      
+      h3 {
+        color: $cinzaLetras;
+        margin-bottom: 1rem;
+        font-weight: 800;
+      }
+    }
+
+
+    .line {
+      border-top: 1px solid $cinzaLinhas;
+      margin: 0.5rem auto 1.5rem auto;
+      width: 100%;
+    }  
+}
+
+
+

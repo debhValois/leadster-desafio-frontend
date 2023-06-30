@@ -5,8 +5,8 @@ import { AiOutlineClose } from 'react-icons/ai';
 import { useState } from 'react';
 
 const links = [
-  { url: '#products', text: 'Produtos' },
-  { url: '#about', text: 'Sobre' },
+  { url: '#soluctions', text: 'Soluções' },
+  { url: '#demo', text: 'Demonstração' },
   { url: '#social', text: 'Social' },
   { url: '#reviews', text: 'Depoimentos' },
 ];
@@ -34,6 +34,7 @@ const Navbar = () => {
           <ul>{renderLinks.slice(2, 4)}</ul>
         </nav>
       </div>
+
       <div className={`${styles.mobile} ${isMobile ? styles.active : ''}`}>
         <div className={styles.logo}>
           <Logo />

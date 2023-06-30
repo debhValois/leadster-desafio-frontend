@@ -1,9 +1,9 @@
 import Image from 'next/image';
-import styles from './About.module.scss';
+import styles from './Demo.module.scss';
 
-const About = () => {
+const Demo = () => {
   return (
-    <section id='about' className={styles.about}>
+    <section id='demo' className={styles.demo}>
       <Image src='/comparativo_img_CTA.png' alt='comparativo' width={600} height={500} />
       <div className={styles.content}>
         <h2 className='title light-bg'>Pronto para triplicar sua</h2>
@@ -20,4 +20,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Demo;

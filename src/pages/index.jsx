@@ -1,8 +1,8 @@
-import About from '@/Components/About/About';
+import Demo from '@/Components/Demo/Demo';
 import Footer from '@/Components/Footer/Footer';
 import Header from '@/Components/Header/Header';
 import Navbar from '@/Components/Navbar/Navbar';
-import Products from '@/Components/Products/Products';
+import Soluctions from '@/Components/Soluctions/Soluctions';
 import Head from 'next/head';
 
 export default function Home() {
@@ -15,8 +15,8 @@ export default function Home() {
       <main>
         <Navbar />
         <Header />
-        <Products />
-        <About />
+        <Soluctions /> {/*Soluções - Diversos Produtos*/}  
+        <Demo />    {/*Demonstração*/}
         <Footer />
       </main>
     </>

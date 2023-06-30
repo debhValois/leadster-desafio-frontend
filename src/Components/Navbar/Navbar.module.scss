@@ -4,7 +4,7 @@
 .navbar {
   background-color: $primary;
   padding: 5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   
   .desktop {
     @include max-width;
@@ -42,10 +42,10 @@
 
           a {
             padding: 1rem;
-            color: $mediumSecondary;
+            color: $cinzaLetras;
 
             &:hover {
-              color: lighten($mediumSecondary, 15);
+              color: #006eec;
             }
           }
         }

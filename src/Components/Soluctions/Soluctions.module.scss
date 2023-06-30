@@ -1,10 +1,11 @@
 @import '@/styles/mixins.scss';
 
-.products {
+.soluctions {
   @include max-width;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr); // QTDADE DE CARDS POR LINHA
   scroll-margin-top: 10rem;
+
 
   @include device(notebook) {
     grid-template-columns: repeat(2, 1fr);
