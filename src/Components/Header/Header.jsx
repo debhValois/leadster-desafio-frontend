@@ -5,8 +5,8 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.content}>
-        <a href='#products' className='btn btn-primary'>
-          WEBNARS EXCLUSIVOS
+        <a href='#soluctions' className='btn btn-header'>
+          WEBNARS  EXCLUSIVOS
         </a>
         <br/>
         <br/>
