@@ -6,36 +6,63 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.content}>
-        <div className={styles.column1}>
-          <h2>
+        <div className={styles.logo}>
             <Logo />
-          </h2>
-          <h3 className='p'>
-            Desfrute de um café de qualidade enquanto se reconecta com o que é
-            essencial
+           <p>
+             Transformando visitantes em clientes.
+           </p>
+         </div>
+      </div>
+      
+      <div className={styles.content}>
+        <div className={styles.columns}>
+          <h3>
+          Links Principais
           </h3>
-          <SocialLinks />
-        </div>
-        <div className={styles.column2}>
-          <h2 className='p'>Faça-nos uma Visita</h2>
-          <iframe
-            src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8058.910289930575!2d2.9406611710844976!3d11.13240978938546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x11cd10083c934e37%3A0x41c6621a2923fb6e!2sLAS%20VEGAS%20ALIMENTATION!5e0!3m2!1spt-BR!2sbr!4v1678902761040!5m2!1spt-BR!2sbr'
-            allowFullScreen={true}
-            loading='lazy'
-            referrerPolicy='no-referrer-when-downgrade'
-          />
-        </div>
-        <div className={styles.column3}>
-          <h2 className='p'>Funcionamento</h2>
           <ul>
-            <li>Segunda - Sexta: 09:00 às 18:00</li>
-            <li>Sábados: 09:00 às 14:00</li>
-            <li>(00) 000000-0000</li>
-            <li>contato@bubblecoffee.com.br</li>
+            <li>Home</li>
+            <li>Ferramenta</li>
+            <li>Preços</li>
+            <li>Contato</li>
           </ul>
         </div>
+        <div className={styles.columns}>
+          <h3>
+          Cases
+          </h3>
+          <ul>
+            <li>Geração de Leads B2B</li>
+            <li>Geração de Leads em Software</li>
+            <li>Geração de Leads em Imobiliária</li>
+            <li>Cases de Sucesso</li>
+          </ul>
+        </div>
+        <div className={styles.columns}>
+          <h3>
+          Materiais
+          </h3>
+          <ul>
+            <li>Blog</li>
+            <li>Parcerias com Agências</li>
+            <li>Guia Definitivo do Marketing</li>
+            <li>Materiais Gratuitos</li>
+          </ul>
+        </div>
+        <div className={styles.columns}>
+          <h3>
+          Siga a Leadster
+          </h3>
+          <SocialLinks />
+          <ul>
+            <p><b>E-mail:</b> contato@leadster.com.br</p>
+            <p><b>Telefone:</b> (42) 98828-9851</p>
+          </ul>
+        </div>
+      </div >
+      <div className={styles.content}>
+        <span>Copyright© 2015 - 2022 Todos os direitos reservados |<a href='#'> Leadster</a></span>
+        <span>Rua José Loureiro, 464 - Centro - Curitiba PR - CEP: 80010-000 |<a href='#'> Termos de Uso</a></span>
       </div>
-      <span>Bubble Coffee - Todos os direitos reservados</span>
     </footer>
   );
 };
