@@ -1,21 +1,26 @@
-@import '@/styles/variables.scss';
-@import '@/styles/mixins.scss';
+@import "@/styles/variables.scss";
+@import "@/styles/mixins.scss";
 
+.rowLogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 4rem;
+}
 
 .footer {
   background-color: $bgPrimary;
-  padding: 6rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
 
-  @include device(notebook) {
+  /*@include device(notebook) {
     padding: 6rem 2rem;
     padding-bottom: 1rem;
   }
 
   @include device(tablet) {
     padding: 6rem 1rem;
-  }
+  }*/
 
   span {
     display: block;
@@ -24,34 +29,31 @@
     opacity: 0.6;
   }
 
+  a {
+    color: $azulLetras;
+  }
+
   .content {
     @include max-width;
     display: flex;
     justify-content: space-between;
     gap: 6rem;
-    
+    margin-bottom: 4rem;
 
-    @include device(notebook) {
+    /* @include device(notebook) {
       flex-direction: column;
       gap: 4rem;
       align-items: center;
       max-width: 60rem;
       margin-bottom: 4rem;
-    }
-
-    .logo {
-      @include max-width;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+    }*/
 
     .columns {
       flex-grow: 1;
+      margin-bottom: 5rem;
 
       h3 {
-        margin-bottom: 2rem;
-        margin-top: 0.5rem;
+        margin-bottom: 4rem;
         color: $black;
         opacity: 0.8;
       }
@@ -63,7 +65,7 @@
 
           &:hover {
             cursor: pointer;
-            color: $azulBtn!important;
+            color: $azulBtn !important;
           }
 
           &:not(:last-of-type) {
@@ -71,11 +73,9 @@
           }
         }
       }
-
-      @include device(notebook) {
+      /*@include device(notebook) {
         max-width: none;
-      }
+      }*/
     }
-
   }
 }
