@@ -1,10 +1,9 @@
-@import '@/styles/variables.scss';
-@import '@/styles/mixins.scss';
+@import "@/styles/variables.scss";
+@import "@/styles/mixins.scss";
 
 .navbar {
   background-color: $primary;
   padding: 5rem;
-  margin-bottom: 4rem;
   
   .desktop {
     @include max-width;
@@ -17,7 +16,10 @@
     padding-bottom: 1rem;
     transform: translateX(-50%);
     z-index: 10;
-   
+
+    @include device(tablet) {
+      display: none;
+    }
 
     .navigation {
       ul {
@@ -39,6 +41,12 @@
         }
       }
     }
+  }
+
+  .line {
+    border-top: 1px solid $cinzaLinhas;
+    margin: 0.5rem auto 1.5rem auto;
+    width: 70%;
   }
 
   .mobile {

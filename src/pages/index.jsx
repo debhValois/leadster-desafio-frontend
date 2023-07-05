@@ -1,5 +1,6 @@
 import Navbar from '@/Components/Navbar/Navbar';
 import Header from '@/Components/Header/Header';
+import Filter from '@/Components/Filter/Filter';
 import Soluctions from '@/Components/Soluctions/Soluctions';
 import Demo from '@/Components/Demo/Demo';
 import Footer from '@/Components/Footer/Footer';
@@ -15,6 +16,7 @@ export default function Home() {
       <main>
         <Navbar />
         <Header />
+        <Filter /> {/*Menu com filtro de busca*/}  
         <Soluctions /> {/*Soluções - Diversos Produtos*/}  
         <Demo />    {/*Demonstração*/}
         <Footer />
