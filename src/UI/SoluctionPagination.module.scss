@@ -1,0 +1,16 @@
+@import "@/styles/mixins.scss";
+@import "@/styles/variables.scss";
+
+.content {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 7rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    
+    h3 {
+      font-size: 2rem;
+    }
+  }

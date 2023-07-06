@@ -1,4 +1,6 @@
-@import '@/styles/mixins.scss';
+@import "@/styles/mixins.scss";
+@import "@/styles/variables.scss";
+
 
 .soluctions {
   @include max-width;
@@ -6,7 +8,8 @@
   grid-template-columns: repeat(3, 1fr); // QTDADE DE CARDS POR LINHA
   scroll-margin-top: 5rem;
 
-
+  
+  
   @include device(notebook) {
     grid-template-columns: repeat(2, 1fr);
   }
