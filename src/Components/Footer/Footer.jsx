@@ -6,10 +6,10 @@ const Footer = () => {
   return (
     <footer id="footer" className={styles.footer}>
       <div className={styles.rowLogo}>
-        <h1>
+        
           <Logo />
-        </h1>
-        <span>Transformando visitantes em clientes.</span>
+        
+        <p>Transformando visitantes em clientes.</p>
       </div>
       <div className={styles.content}>
         <div className={styles.columns}>
@@ -52,7 +52,10 @@ const Footer = () => {
           </ul>
         </div>
       </div>
+      <div className={styles.line} />
+      <br/>
       <div className={styles.content}>
+    
         <span>
           Copyright© 2015 - 2022 Todos os direitos reservados |
           <a href="#">

@@ -1,4 +1,6 @@
 import { Dropdown } from "@nextui-org/react";
+import styles from "./DropdownList.module.scss";
+
 
 const DropdownList = () => {
   return (

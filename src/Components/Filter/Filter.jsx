@@ -23,11 +23,9 @@ const Filter = () => {
     <section className="btn btn-demo" className={styles.navbar}>
       <div className={styles.desktop}>
         <nav className={styles.navigation}>
-          <ul>{renderLinks.slice(0, 4)}</ul>
+          <ul>{renderLinks.slice(0, 5)}</ul>
         </nav>
-        <h2>
-          <DropdownList />
-        </h2>
+        <DropdownList />
       </div>
 
       <br />

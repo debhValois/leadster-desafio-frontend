@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 4rem;
   padding-bottom: 4rem;
 }
 
@@ -13,14 +14,14 @@
   padding-left: 6rem;
   padding-right: 6rem;
 
-  /*@include device(notebook) {
+  @include device(notebook) {
     padding: 6rem 2rem;
     padding-bottom: 1rem;
   }
 
   @include device(tablet) {
     padding: 6rem 1rem;
-  }*/
+  }
 
   span {
     display: block;
@@ -29,10 +30,17 @@
     opacity: 0.6;
   }
 
+  p {
+    opacity: 0.8;
+  }
+
   a {
     color: $azulLetras;
   }
-
+  .line {
+    border-top: 1px solid $cinzaLinhas;
+    opacity: 0.4;
+  }
   .content {
     @include max-width;
     display: flex;
@@ -40,28 +48,30 @@
     gap: 6rem;
     margin-bottom: 4rem;
 
-    /* @include device(notebook) {
+    @include device(notebook) {
       flex-direction: column;
       gap: 4rem;
       align-items: center;
       max-width: 60rem;
       margin-bottom: 4rem;
-    }*/
+    }
 
     .columns {
       flex-grow: 1;
-      margin-bottom: 5rem;
+      margin-bottom: 4rem;
 
       h3 {
-        margin-bottom: 4rem;
+        margin-left: 1rem;
+        margin-bottom: 5rem;
         color: $black;
-        opacity: 0.8;
+        font-size: large;
       }
 
       ul {
         li {
           color: $cinzaLetrasFooter;
-          opacity: 0.8;
+          opacity: 0.9;
+          font-size: 1.6rem;
 
           &:hover {
             cursor: pointer;
@@ -73,9 +83,9 @@
           }
         }
       }
-      /*@include device(notebook) {
+      @include device(notebook) {
         max-width: none;
-      }*/
+      }
     }
   }
 }

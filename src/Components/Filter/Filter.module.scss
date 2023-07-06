@@ -4,7 +4,7 @@
 .navbar {
   background-color: $primary;
   padding: 5rem;
-  
+
   .desktop {
     @include max-width;
     display: flex;
@@ -49,6 +49,10 @@
     border-top: 1px solid $cinzaLinhas;
     margin: 0.5rem auto 1.5rem auto;
     width: 70%;
+  }
+
+  .btnDrop {
+    font-size: 4rem;
   }
 
   .mobile {
