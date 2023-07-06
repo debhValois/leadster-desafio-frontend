@@ -1,36 +1,45 @@
 <h1 align="center">
-  <img alt="Logo da Leadster" title="Leadster" src="./public/logo.png"/>
-  Desafio Front-End
+<img alt="Logo da Leadster" title="Leadster" src="./public/logo.png" width="200px"/>
+
+Desafio Front-End NextJS
 </h1>
-<p align="center"> Status <☕> Em desenvolvimento 06 julho 2023 <☕/></p>
 
+<p align="center"> Status <☕> 06 julho 23 = MVP <☕/></p>
 
-## As decisões que eu tomei:
+## Minhas decisões
 
 Pensando num MVP, no que seria possível entregar nesse espaço de tempo:
+
 - Priorizei a reprodução fiel do layout e foquei na estilização do skin.
 - Na sessão de soluções, não desenvolvi as funcionalidades como searchFilter + dropdownList + pagination, porém as deixei aparente demosntrando o que poderá acontecer ali, naqueles elementos, numa próxima entrega.
 
 Como sugestão:
+
 - Adicionei um possível menu no top navbar, linkei os 2 btns ativos às respectivas sections;
 - Alterei a cor ativa da paginação para verde, para harmozizar com os detalhes da imagem que vem logo abaixo;
 - Add aos cards preço e stars.
 
 </br>
 
-## Como  organizei meu código:
-- Dentro da pasta components, há uma pasta para cada sessão da página. Componentes que não são sessão, estão dentro da pasta ui. 
-- Na pasta styles ficam as variáveis globais, comum à todos, e que são chamadas e sofrem alterações em cada arquivo SCSS. 
+## Organização
+
+- Dentro do folder components, há um folder para cada sessão da landing. Os componentes que não são sessão, estão dentro do folder ui.
+- No folder styles ficam as variáveis globais, comum à todos, e que são chamadas e sofrem alterações em cada arquivo SCSS.
 
 </br>
 
-## As funcionalidades: 
-- As pastas filter + soluctions - assim como os arquivos dropDownList e soluctionPagnation, deveriam compor a mesma section. Que seria o grid de opções para escolha dos produtos e a visualização do player dos videos. Essa integração, ou uma contrução única dela, não houve tempo para desenvolver.
+## Funcionalidades
+
+- Os folders filter + soluctions - assim como os files dropDownList e soluctionPagnation, deveriam compor uma única section, que seria o grid de opções para escolha dos produtos e a visualização do player dos videos. Contudo, essa integração, ou uma contrução única dela, não houve tempo para desenvolver.
 
 </br>
 
-## Quanto tempo levei e o que faltou 
-- Foram 5 momentos - que nos commmits chamei "Day" - mas que não correspondem a um dia de trabalho. Foram horas intercaladas durante a semana que separei p o desafio.
+## Quanto tempo levei e o que faltou
+
+Foram 5 momentos - que nos commmits chamei de "Day" - mas que não correspondem a um dia de trabalho. Foram horas intercaladas durante a semana que separei para o desafio.
+
+Ainda em desenvolvimento:
+
 - Responsividade;
 - Json para URLs dos vídeos;
 - Documentação;
@@ -38,20 +47,31 @@ Como sugestão:
 
 </br>
 
-## As instruções de como rodar o projeto:
-- 
+## Para visualizar a langing page
+
+<table align="center">
+  <tr>
+    <td>
+      <a href="https://leadster-desafio-frontend-git-main-debhvalois.vercel.app/" alt="acesso" target="_blank">
+        <img src="public/leadster-readme.png" width="300px" alt="mobile"/>
+      </a>
+    </td>
+  </tr>
+</table>
 
 </br>
 
-## 🛠️ Tecnologias utilizadas:
-- ``CSS``
-- ``Typescript``
-- ``React``
-- ``NextJs``
+## 🛠️ Tecnologias utilizadas
+
+- `CSS`
+- `Typescript`
+- `React`
+- `NextJs`
 
 </br>
 
-## :octocat: Dev: 
+## :octocat: Dev:
+
 <table>
   <tr>
     <td align="center">
