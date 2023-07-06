@@ -1,10 +1,23 @@
-import styles from './SocialLinks.module.scss';
-import { RiLinkedinFill, RiFacebookFill, RiInstagramLine } from 'react-icons/ri';
+import styles from "./SocialLinks.module.scss";
+import {
+  RiLinkedinFill,
+  RiFacebookFill,
+  RiInstagramLine,
+} from "react-icons/ri";
 
 const socialLinks = [
-  { url: 'https://www.linkedin.com/company/getleadster/', component: <RiLinkedinFill /> },
-  { url: 'https://www.facebook.com/leadsterplatform', component: <RiFacebookFill /> },
-  { url: 'https://www.instagram.com/leadster.com.br/', component: <RiInstagramLine /> },
+  {
+    url: "https://www.linkedin.com/company/getleadster/",
+    component: <RiLinkedinFill />,
+  },
+  {
+    url: "https://www.facebook.com/leadsterplatform",
+    component: <RiFacebookFill />,
+  },
+  {
+    url: "https://www.instagram.com/leadster.com.br/",
+    component: <RiInstagramLine />,
+  },
 ];
 
 const SocialLinks = () => {

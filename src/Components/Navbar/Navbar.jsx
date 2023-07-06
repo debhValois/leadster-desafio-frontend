@@ -1,14 +1,12 @@
-import Logo from '@/UI/Logo';
-import styles from './Navbar.module.scss';
-import { GiHamburgerMenu } from 'react-icons/gi';
-import { AiOutlineClose } from 'react-icons/ai';
-import { useState } from 'react';
+import Logo from "@/UI/Logo";
+import styles from "./Navbar.module.scss";
+import { useState } from "react";
 
 const links = [
-  { url: '#soluctions', text: 'Soluções' },
-  { url: '#demo', text: 'Demonstração' },
-  { url: '#', text: 'Conteúdo' },
-  { url: '#footer', text: 'Contato' },
+  { url: "#soluctions", text: "Soluções" },
+  { url: "#demo", text: "Demonstração" },
+  { url: "#", text: "Conteúdo" },
+  { url: "#footer", text: "Contato" },
 ];
 
 const Navbar = () => {
@@ -22,8 +20,7 @@ const Navbar = () => {
 
   const toggleIsMobile = () => setIsMobile((prevState) => !prevState);
   return (
-   <section className={styles.navbar}>
-      
+    <section className={styles.navbar}>
       <div className={styles.desktop}>
         <nav className={styles.navigation}>
           <ul>{renderLinks.slice(0, 2)}</ul>
@@ -33,18 +30,6 @@ const Navbar = () => {
         </div>
         <nav className={styles.navigation}>
           <ul>{renderLinks.slice(2, 4)}</ul>
-        </nav>
-      </div>
-      
-      
-      <div className={`${styles.mobile} ${isMobile ? styles.active : ''}`}>
-        <div className={styles.logo}>
-          <Logo />
-        </div>
-        <GiHamburgerMenu onClick={toggleIsMobile} className={styles.burguer} />
-        <nav className={styles['mobile-navigation']}>
-          <AiOutlineClose onClick={toggleIsMobile} className={styles.close} />
-          <ul>{renderLinks}</ul>
         </nav>
       </div>
     </section>
