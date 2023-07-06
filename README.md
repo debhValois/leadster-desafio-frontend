@@ -13,7 +13,7 @@ Pensando num MVP, no que seria possível entregar nesse espaço de tempo:
 
 Como sugestão:
 - Adicionei um possível menu no top navbar, linkei os 2 btns ativos às respectivas sections;
-- Alterei a cor ativa da paginação para verde, para complementar com os detalhes da imagem que vem logo abaixo;
+- Alterei a cor ativa da paginação para verde, para harmozizar com os detalhes da imagem que vem logo abaixo;
 - Add aos cards preço e stars.
 
 </br>

@@ -2,7 +2,7 @@
 @import "@/styles/mixins.scss";
 
 .navbar {
-  background-color: $primary;
+  background-color: $bgPrimary;
   padding: 5rem;
 
   .desktop {
@@ -62,20 +62,6 @@
       display: block;
     }
 
-    .burguer,
-    .close {
-      width: 2.4rem;
-      height: 2.4rem;
-      color: $mediumSecondary;
-      position: absolute;
-      z-index: 10;
-    }
-
-    .burguer {
-      top: 3rem;
-      right: 2rem;
-    }
-
     .logo {
       position: absolute;
       top: 2rem;
@@ -87,7 +73,7 @@
       position: fixed;
       right: -30rem;
       top: 0;
-      background-color: $primary;
+      background-color: $bgPrimary;
       height: 100vh;
       width: 30rem;
       display: flex;
@@ -111,7 +97,7 @@
 
           a {
             padding: 1rem;
-            color: $mediumSecondary;
+            color: $cinzaLetras;
             font-size: 2.1rem;
           }
         }

@@ -1,5 +1,5 @@
-@import '@/styles/variables.scss';
-@import '@/styles/mixins.scss';
+@import "@/styles/variables.scss";
+@import "@/styles/mixins.scss";
 
 * {
   margin: 0;
@@ -18,9 +18,8 @@ html {
 
 body {
   font-size: 1.6rem;
-  background-color: $background;
-  font-family: 'Plus Jakarta Sans', sans-serif;
-
+  background-color: $bgPrimary;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 h1,
@@ -28,7 +27,7 @@ h1,
   font-family: $headerFont;
   font-size: 9rem;
   font-weight: 700;
-  color: #2c83fb;
+  color: $azulDestaque;
   background-image: -webkit-linear-gradient(45deg, #2c83fb 50%, #1f76f0 50%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -114,10 +113,10 @@ ul {
 .btn {
   border: 2px solid $azulBtn;
   text-transform: uppercase;
-  transition: all .3s linear;
+  transition: all 0.3s linear;
   text-align: center;
   font-size: 14px;
-  
+
   &.btn-header {
     background: transparent;
     padding: 6px 20px;
@@ -126,11 +125,11 @@ ul {
     min-width: 200px;
     height: 41px;
     font-weight: 700;
-    color: $azulBtn!important;
-    
+    color: $azulBtn !important;
+
     &:hover {
       cursor: pointer;
-      color: #ffffff!important;
+      color: #ffffff !important;
       background-color: $azulBtn;
     }
   }
@@ -142,14 +141,11 @@ ul {
     color: $bgPrimary;
     border-radius: 45px;
     border: 1px solid $azulBtn;
-    
+
     &:hover {
       cursor: pointer;
-      color: $azulBtn!important;
+      color: $azulBtn !important;
       background: $bgPrimary;
     }
   }
 }
-
-
-    

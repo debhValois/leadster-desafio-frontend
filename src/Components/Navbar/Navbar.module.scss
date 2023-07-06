@@ -2,7 +2,7 @@
 @import '@/styles/mixins.scss';
 
 .navbar {
-  background-color: $primary;
+  background-color: $bgPrimary;
   padding: 4rem;
   margin-bottom: 4rem;
   
@@ -52,7 +52,7 @@
     .close {
       width: 2.4rem;
       height: 2.4rem;
-      color: $mediumSecondary;
+      color: $cinzaLetras;
       position: absolute;
       z-index: 10;
     }
@@ -73,7 +73,7 @@
       position: fixed;
       right: -30rem;
       top: 0;
-      background-color: $primary;
+      background-color: $bgPrimary;
       height: 100vh;
       width: 30rem;
       display: flex;
@@ -97,7 +97,7 @@
 
           a {
             padding: 1rem;
-            color: $mediumSecondary;
+            color: $cinzaLetras;
             font-size: 2.1rem;
           }
         }

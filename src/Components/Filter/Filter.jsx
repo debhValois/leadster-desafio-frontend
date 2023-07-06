@@ -2,14 +2,15 @@ import styles from "./Filter.module.scss";
 import DropdownList from "@/UI/DropdownList";
 import { useState } from "react";
 
-const links = [
-  { url: "#", text: "Agências" },
-  { url: "#", text: "Chatbot" },
-  { url: "#", text: "Marketing Digital" },
-  { url: "#", text: "Geração de Leads" },
-  { url: "#", text: "Mídia Paga" },
-];
 const Filter = () => {
+  const links = [
+    { url: "#", text: "Agências" },
+    { url: "#", text: "Chatbot" },
+    { url: "#", text: "Marketing Digital" },
+    { url: "#", text: "Geração de Leads" },
+    { url: "#", text: "Mídia Paga" },
+  ];
+
   const [isMobile, setIsMobile] = useState(false);
 
   const renderLinks = links.map((link, i) => (
@@ -20,7 +21,7 @@ const Filter = () => {
 
   const toggleIsMobile = () => setIsMobile((prevState) => !prevState);
   return (
-    <section className="btn btn-demo" className={styles.navbar}>
+    <section className={styles.navbar}>
       <div className={styles.desktop}>
         <nav className={styles.navigation}>
           <ul>{renderLinks.slice(0, 5)}</ul>
